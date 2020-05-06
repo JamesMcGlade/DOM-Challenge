@@ -35,7 +35,7 @@ input {
 	overflow-x: hidden;
 }
 
-.box {
+#box {
 	width: calc(100vw / 3.5);
 	height: calc(100vw / 3.5);
 	margin: 10px;

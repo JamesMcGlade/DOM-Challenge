@@ -1,14 +1,14 @@
-const wrapper = document.createElement('div');
-wrapper.id = "wrapper";
+// const wrapper = document.createElement('div');
+// wrapper.id = "wrapper";
 numBoxes = 9;
 
 for (i = 0; i < numBoxes; i++) {
     var box = document.createElement('div');
-    box.className = "box";
-    document.getElementById("box").appendChild(box);
+    box.id = "box";
+    wrapper.appendChild(box);
     }
 
-wrapper.appendChild(box);
+
 
 
 //     document.getElementById('box').appendChild(box);
