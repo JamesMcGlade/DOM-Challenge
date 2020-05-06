@@ -4,7 +4,7 @@ numBoxes = 9;
 
 for (i = 0; i < numBoxes; i++) {
     var box = document.createElement('div');
-    box.id = "box";
+    box.className = "box";
     wrapper.appendChild(box);
     }
 
