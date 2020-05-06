@@ -41,3 +41,8 @@ input {
 	margin: 10px;
 	background-color: #404040;
 }
+
+img {
+	width: calc(100vw / 3.5);
+	height: calc(100vw / 3.5);
+}
