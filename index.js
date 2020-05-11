@@ -5,8 +5,8 @@ let input = document.createElement('input');
 let submit = document.createElement('input');
 let clear = document.createElement('input');
 var box = document.createElement('div');
-var img = document.createElement('img');
-img.src = "https://source.unsplash.com/random/500x500//?bunny"
+// var img = document.createElement('img');
+// img.src = "https://source.unsplash.com/random/500x500//?bunny"
 box.className = "box";
 wrapper.id = "wrapper";
 form.id = "form";
@@ -22,15 +22,15 @@ body.appendChild(wrapper);
 submit.onclick = ()  =>{
     numBoxes = input.value;
     for (i = 0; i < numBoxes; i++) {
+        let randomImageIndex = Math.floor(Math.random() * 10000);
         var box = document.createElement('div');
         box.className = "box";
         var img = document.createElement('img');
-        img.src = "https://source.unsplash.com/random/500x500//?bunny";
+        img.src = `https://source.unsplash.com/random/500x500/?sig=${randomImageIndex}&bunny`;
         img.setAttribute ("height", "100vw / 3.5");
         img.setAttribute ("width", "100vw / 3.5");
         box.appendChild(img);
         box.classList.add('box');
-        box.appendChild(img);
         wrapper.appendChild(box);
         }
 }
@@ -66,3 +66,10 @@ clear.onclick = () =>{
 // // myDiv.classList.remove();
 
 // console.log(div);
+
+
+
+// 
+
+// 
+
